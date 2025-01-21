@@ -1,0 +1,31 @@
+export const likes = [
+    "Lebron James",
+    "Batman",
+    "Cards",
+    "The Nice Guys",
+    "Gym",
+    "Russel Westbrook",
+    "Steak",
+    "Lamar Jackson",
+    "Play Station",
+    "Jayden Daniels",
+    "Sushi",
+    "Bed",
+    "Better Call Saul",
+];
+
+export const skills = [
+    "Java",
+    "Python",
+    "C",
+    "Bash",
+    "Javascript",
+    "html",
+    "CSS",
+    "React",
+    "Git",
+    "Linux",
+    "Agile",
+    "Figma",
+    "Jira",
+];
