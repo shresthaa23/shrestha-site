@@ -1,11 +1,26 @@
+/* 
+  top level color schemes
+
+  background - #121212 - black
+  titles - #00D8FF - cyan blue thing
+  normal - #E0E0E0 - gray white
+  accent 1 - #FF6E6E - red pink 
+  accent 2 - #A970FF - lavender purple
+  accent 3 - #FFD700 - yellow
+  accent 4 - #9B59FF - purple
+
+*/
+
+@import "tailwindcss";
+
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: #E0E0E0;
+  background-color: #121212;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
