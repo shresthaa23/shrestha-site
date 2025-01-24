@@ -14,6 +14,26 @@
   margin-top: 20px;
 }
 
+.asdf {
+  background-color: orange;
+}
+
+.container {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center; 
+  margin: 0 auto;
+  padding: 0rem;
+  text-align: center;
+  min-width: 320px;
+  max-width: 1280px;
+  min-height: 100vh; 
+  padding-bottom: 10rem;
+  background-color: #121212; 
+}
+
+
 @media screen and (max-width: 1200px) {
   .subheader {
     width: 60vw;
