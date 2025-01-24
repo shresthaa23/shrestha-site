@@ -34,10 +34,14 @@ section {
   display: flex;
   flex-direction: column;
   gap: 2rem; 
+  scroll-snap-type: y mandatory; 
+  overflow-y: auto; 
 }
 
 html {
+  scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
+
 }
 
 /* 
