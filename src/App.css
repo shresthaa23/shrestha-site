@@ -34,15 +34,17 @@ section {
   display: flex;
   flex-direction: column;
   gap: 2rem; 
-  scroll-snap-type: y mandatory; 
-  overflow-y: auto; 
+  /* overflow-y: auto;  */
+  scroll-snap-type: y mandatory; /* Y-axis snapping */
+  overflow-y: scroll; /* Allow vertical scrolling */
+  height: 100vh; /* Ensure the container is full screen height */
 }
 
 html {
-  scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
-
+  scroll-snap-type: y mandatory; 
 }
+
 
 /* 
 .logo {
