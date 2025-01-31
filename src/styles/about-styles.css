@@ -1,0 +1,156 @@
+.about-subheader {
+    font-size: 3rem;
+    font-weight: 300;
+    color: #E0E0E0;
+    width: 45vw;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.general-header {
+    font-size: 3rem;
+    font-weight: 300;
+    text-align: center;
+    font-weight: bold;
+    color: #00D8FF;
+}
+
+.my-name {
+    font-size: 2rem; 
+    font-weight: 700; 
+    color: white;
+    margin-bottom: 10px;
+    border-bottom: 2px solid white; 
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+.about-me {
+    font-size: 1rem; 
+    line-height: 1.5; 
+    color: white;
+    width: 100%; 
+    text-align: left;
+    margin-top: 0; 
+
+}
+
+.resume {
+    text-decoration: none;
+}
+
+.resume:hover {
+    text-decoration: underline;
+    font-style: italic;
+    color: #00D8FF;
+}
+
+.container {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center; 
+    margin: 0 auto;
+    padding: 0rem;
+    text-align: center;
+    min-width: 320px;
+    max-width: 1280px;
+    min-height: 100vh; 
+
+    background-color: #121212; 
+}
+
+.marquee {
+    width: 100%;
+    overflow: hidden; 
+    display: flex; 
+    justify-content: flex-start; 
+}
+  
+.marquee-item {
+    display: inline-block; 
+    padding: 10px; 
+    text-align: center;
+    margin-right: 20px;
+}
+  
+.marquee-img {
+    width: 100px; 
+    height: 100px;
+    border-radius: 8px;
+}
+
+.image-caption {
+    margin-top: 8px; 
+    font-size: 14px; 
+    font-weight: bold;
+    color: #333; 
+    text-transform: capitalize; 
+    text-align: center;
+    color: white;
+}
+  
+.box {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; 
+    gap: 20px;
+    
+    width: 100%;  
+    max-width: 1000px;  
+    height: 60vh;  
+    
+    margin: 20px auto; 
+    padding: 20px;
+    border-radius: 10px; 
+    flex-wrap: wrap;
+
+    /* outline: 4px solid blue;  */
+    outline-offset: 5px; 
+    
+    border: 3px solid white; 
+    border-radius: 10px; 
+    
+    box-shadow: 5px 5px 15px white; 
+
+}
+
+.text {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start; 
+}
+
+.asdf {
+    flex-direction: column; 
+    align-items: flex-start; 
+    justify-content: flex-start; 
+}
+
+.about-me {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.photo img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px; 
+    object-fit: cover;
+}
+
+  
+@media screen and (max-width: 1200px) {
+    .subheader {
+        width: 60vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .subheader {
+        width: 80vw;
+    }
+}
+
