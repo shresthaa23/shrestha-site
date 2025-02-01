@@ -41,8 +41,6 @@
 
 .resume:hover {
     text-decoration: underline;
-    font-style: italic;
-    color: #00D8FF;
 }
 
 .container {
@@ -112,7 +110,7 @@
     border-radius: 10px; 
     
     box-shadow: 5px 5px 15px white; 
-
+    overflow: hidden;
 }
 
 .text {
@@ -134,11 +132,28 @@
     padding-right: 20px;
 }
 
-.photo img {
-    width: 300px;
-    height: auto;
+.photo {
     border-radius: 10px; 
-    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; /* Make it clear the image is clickable */
+    width: 300px; /* Set a fixed width for the image container */
+    height: 300px; /* Set a fixed height for the image container */
+    overflow: hidden; /* Hide any part of the image that doesn't fit in the box */
+}
+
+.profile-photo {
+    width: 100%; /* Make the image take up the full width of the container */
+    height: 100%; /* Make the image take up the full height of the container */
+    object-fit: cover; /* This ensures the image covers the container without stretching */
+    transition: transform 0.3s ease; /* Smooth transition when hovering */
+    border-radius: 10px; 
+}
+
+.profile-photo:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    border-radius: 10px; 
 }
 
   
