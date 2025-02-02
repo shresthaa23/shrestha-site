@@ -1,13 +1,12 @@
-import '../styles/hero-styles.css';
+import '../styles/contact-styles.css';
+// import ContactForm from "./ContactForm"
 
 
 const Contact = () => {
   return (
     <section id="Contact" className="container">
-    <div>
-      <div className="hero-header"> Contact. </div>
-    </div>
-  </section>
+      <div className="general-header">Contact</div>
+    </section>
   );
 };
 
