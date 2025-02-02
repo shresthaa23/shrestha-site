@@ -37,10 +37,10 @@ export const aboutMe =
 
 export const projects = [
     { 
-        title: "https://letsenhance.io/static/73136da51c245e80edc6ccfe44888a99/1015f/MainBefore.jpg", description: "Alice", link1: 30, link2: "asdf", 
+        title: "https://images.unsplash.com/photo-1541516160071-4bb0c5af65ba?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dGFraW5nJTIwcGhvdG98ZW58MHx8MHx8fDA%3D", description: "Alice", link1: 30, link2: "asdf", 
     },
     { 
-        title: "https://archive.smashing.media/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/816a406d-b635-4f76-851a-fb0e9ff62e2d/photos-82.jpg", description: "Alice", link1: 30, link2: "asdf", 
+        title: "https://letsenhance.io/static/73136da51c245e80edc6ccfe44888a99/1015f/MainBefore.jpg", description: "Alice", link1: 30, link2: "asdf", 
     },
     { 
         title: "https://iso.500px.com/wp-content/uploads/2016/11/stock-photo-159533631.jpg", description: "Alice", link1: 30, link2: "asdf", 

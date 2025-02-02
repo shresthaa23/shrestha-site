@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { projects } from "../../constants";
 import { FaArrowRight, FaArrowLeft } from 'react-icons/fa';
+import "../../styles/project-styles.css";
 
 const ImageSlider = () => {
 
@@ -20,7 +21,7 @@ const ImageSlider = () => {
     }
 
     return (
-        <div className="box">
+        <div className="project-box">
             <div className="slider">
                 <FaArrowLeft className="left-arrow" onClick={prevSlide} />
                 <FaArrowRight className="right-arrow" onClick={nextSlide} /> 

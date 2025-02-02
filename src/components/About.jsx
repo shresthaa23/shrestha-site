@@ -18,7 +18,7 @@ const About = () => {
   return (
     <section id="About" className="container">
       <div className="general-header">About Me</div>
-      <div className="box">
+      <div className="about-box">
         <div className="text">
           <h1 className="my-name">
             Alex Shrestha |{" "}
