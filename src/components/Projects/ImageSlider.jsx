@@ -21,32 +21,32 @@ const ImageSlider = () => {
     }
 
     return (
-        <div className="project-box">
-            <div className="slider">
-                <FaArrowLeft className="left-arrow" onClick={prevSlide} />
-                <FaArrowRight className="right-arrow" onClick={nextSlide} /> 
-                {projects.map((project, index) => (  
-                    <div key={index} className={index === current ? 'slide active' : 'slide'}>
-                        {index === current && (
-                        <div className="image-container">
-                            <img src={`${project.title}`} alt={project.description} className="image"/>
-                            <div className="overlay">
-                                <div className="text">{project.description}</div>
-                            </div>
-                        </div>          
-                        )}
-                    </div>
-                ))}
+        <div className="slider-container">            
+            <FaArrowLeft className="left-arrow" onClick={prevSlide} />
+            <div className="project-box">
+                <div className="slider">
+                    {projects.map((project, index) => (  
+                        <div key={index} className={index === current ? 'slide active' : 'slide'}>
+                            {index === current && (
+                            <>
+                                <img src={`${project.title}`} alt={project.description} className="image"/>
+                                <div className="overlay">
+                                    <p className="title">hiii</p>
+                                    <p className="description">asdf</p>
+                                    <p className="languages">dfgh</p>
+                                    <p className="code">ghjk</p>
+                                    {/* title -- description - langugaes - code link ideally */}
+                                </div>
+                            </>          
+                            )}
+                        </div>
+                    ))}
+                </div>
             </div>
+            <FaArrowRight className="right-arrow" onClick={nextSlide} /> 
         </div>
     );
 };
 
 
 export default ImageSlider;
-
-// <div>
-// <div className="overlay">
-//     <div className="text">{project.description}</div>
-// </div>
-// </div>
