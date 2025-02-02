@@ -1,6 +1,6 @@
 /* 00D8FF */
 
-.general-header {
+/* .general-header {
     font-size: 3rem;
     font-weight: 300;
     text-align: center;
@@ -19,8 +19,8 @@
     min-width: 320px;
     max-width: 1280px;
     min-height: 100vh; 
-}
-
+} */
+/* 
 .contact-form {
     display: flex;
     justify-content: center;
@@ -85,6 +85,70 @@ form button {
 
 form button:hover {
     background-color: orange;
+} */
+
+.contact {
+  padding-top: 120px;
+  padding-bottom: 10vh;
+  flex-direction: column;
 }
 
+.header {
+  color: #00D8FF;
+  font-size: 5rem;
+  font-weight: 700;
+  margin: 0px;
+  margin-top: 5vh;
+  text-align: center;
+}
 
+.socialGroup {
+  margin: auto auto;
+  color: white;
+  font-size: 2rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+.contact-sub {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  align-items: center;
+}
+
+a:hover {
+    filter: brightness(130%);
+}
+
+svg {
+    margin: 0px 10px;
+    cursor: pointer;
+}
+
+@media screen and (max-height: 600px) {
+  .socialGroup {
+    margin: 20px auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .icons {
+    svg {
+      width: 75px;
+      height: 75px;
+    }
+  }
+  .header {
+    font-size: 3.5rem;
+    margin-top: 0px;
+    margin-bottom: auto;
+  }
+}
