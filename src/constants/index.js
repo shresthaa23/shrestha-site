@@ -46,3 +46,55 @@ export const projects = [
         title: "https://iso.500px.com/wp-content/uploads/2016/11/stock-photo-159533631.jpg", description: "Alice", link1: 30, link2: "asdf", 
     },
 ];
+
+export const technologies = [
+  {
+    name: "HTML 5",
+    icon: "Batman",
+  },
+  {
+    name: "CSS 3",
+    icon: "Lebron James",
+  },
+  {
+    name: "JavaScript",
+    icon: "Russel Westbrook",
+  },
+  {
+    name: "HTML 5",
+    icon: "Batman",
+  },
+  {
+    name: "CSS 3",
+    icon: "Lebron James",
+  },
+  {
+    name: "JavaScript",
+    icon: "Russel Westbrook",
+  },
+  {
+    name: "HTML 5",
+    icon: "Batman",
+  },
+  {
+    name: "CSS 3",
+    icon: "Lebron James",
+  },
+  {
+    name: "JavaScript",
+    icon: "Russel Westbrook",
+  },
+  {
+    name: "HTML 5",
+    icon: "Batman",
+  },
+  {
+    name: "CSS 3",
+    icon: "Lebron James",
+  },
+  {
+    name: "JavaScript",
+    icon: "Russel Westbrook",
+  },
+
+];
