@@ -28,7 +28,12 @@ const ImageSlider = () => {
                 {projects.map((project, index) => (  
                     <div key={index} className={index === current ? 'slide active' : 'slide'}>
                         {index === current && (
-                            <img src={`${project.title}`} alt={project.description} className="image" /> 
+                        <div className="image-container">
+                            <img src={`${project.title}`} alt={project.description} className="image"/>
+                            <div className="overlay">
+                                <div className="text">{project.description}</div>
+                            </div>
+                        </div>          
                         )}
                     </div>
                 ))}
@@ -39,3 +44,9 @@ const ImageSlider = () => {
 
 
 export default ImageSlider;
+
+// <div>
+// <div className="overlay">
+//     <div className="text">{project.description}</div>
+// </div>
+// </div>
