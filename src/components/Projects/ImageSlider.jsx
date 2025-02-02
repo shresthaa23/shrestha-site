@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { projects } from "../../constants";
-import { FaArrowRight, FaArrowLeft } from 'react-icons/fa';
+import { FaArrowRight, FaArrowLeft, FaExternalLinkAlt } from 'react-icons/fa';
 import "../../styles/project-styles.css";
 
 const ImageSlider = () => {
@@ -34,7 +34,10 @@ const ImageSlider = () => {
                                     <p className="title">hiii</p>
                                     <p className="description">asdf</p>
                                     <p className="languages">dfgh</p>
-                                    <p className="code">ghjk</p>
+                                    {/* <p className="code">ghjk</p> */}
+                                    <a href="https://google.com" target="_blank" rel="noreferrer" className="code">
+                                        <FaExternalLinkAlt size="1.5rem" />
+                                    </a>
                                     {/* title -- description - langugaes - code link ideally */}
                                 </div>
                             </>          
