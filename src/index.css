@@ -20,7 +20,8 @@
   font-weight: 400;
 
   color: #E0E0E0;
-  background-color: #121212;
+  /* background-color: #121212; */
+  background: linear-gradient(135deg, #121212, #b35644 );
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;

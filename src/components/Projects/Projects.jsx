@@ -1,13 +1,12 @@
-import '../../styles/hero-styles.css';
-
+import "../../styles/project-styles.css";
+import ImageSlider from "./ImageSlider";
 
 const Projects = () => {
   return (
     <section id="Projects" className="container">
-    <div>
-      <div className="hero-header"> Projects. </div>
-    </div>
-  </section>
+      <div className="general-header">Projects</div>
+      <ImageSlider />
+    </section>
   );
 };
 
