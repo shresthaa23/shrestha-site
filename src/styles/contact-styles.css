@@ -94,7 +94,8 @@ form button:hover {
 }
 
 .header {
-  color: #00D8FF;
+  /* color: #00D8FF; */
+  color: #F5E1C8;
   font-size: 5rem;
   font-weight: 700;
   margin: 0px;
@@ -104,20 +105,39 @@ form button:hover {
 
 .socialGroup {
   margin: auto auto;
-  color: white;
+  color: #F5E1C8;
   font-size: 2rem;
   font-weight: 300;
   text-align: center;
 }
 
 .contact-sub {
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: bold;
     margin-bottom: 10px;
     margin-top: 0px;
 }
 
 .icons {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  align-items: center;
+
+  a:hover {
+    color: blue;
+    filter: brightness(200%);
+
+  }
+
+  svg {
+    margin: 0px 10px;
+    cursor: pointer;
+  }
+}
+
+
+/* .icons {
   display: flex;
   flex-direction: row;
   margin-top: 20px;
@@ -131,7 +151,7 @@ a:hover {
 svg {
     margin: 0px 10px;
     cursor: pointer;
-}
+} */
 
 @media screen and (max-height: 600px) {
   .socialGroup {
