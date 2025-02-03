@@ -49,52 +49,59 @@ export const projects = [
 
 export const technologies = [
   {
-    name: "HTML 5",
-    icon: "Batman",
+    name: "Java",
+    icon: "java",
   },
   {
-    name: "CSS 3",
-    icon: "Lebron James",
+    name: "Python",
+    icon: "python",
   },
   {
-    name: "JavaScript",
-    icon: "Russel Westbrook",
+    name: "C",
+    icon: "c",
   },
   {
-    name: "HTML 5",
-    icon: "Batman",
-  },
-  {
-    name: "CSS 3",
-    icon: "Lebron James",
+    name: "Bash Shell",
+    icon: "bash",
   },
   {
     name: "JavaScript",
-    icon: "Russel Westbrook",
+    icon: "javascript",
   },
   {
-    name: "HTML 5",
-    icon: "Batman",
+    name: "React.js",
+    icon: "react",
   },
   {
-    name: "CSS 3",
-    icon: "Lebron James",
+    name: "HTML",
+    icon: "html",
   },
   {
-    name: "JavaScript",
-    icon: "Russel Westbrook",
+    name: "CSS",
+    icon: "css",
   },
   {
-    name: "HTML 5",
-    icon: "Batman",
+    name: "Git",
+    icon: "git",
   },
   {
-    name: "CSS 3",
-    icon: "Lebron James",
+    name: "Linux",
+    icon: "linux",
   },
   {
-    name: "JavaScript",
-    icon: "Russel Westbrook",
+    name: "Figma",
+    icon: "figma",
   },
-
+  {
+    name: "MATLAB",
+    icon: "matlab",
+  },
+  {
+    name: "Quantum",
+    icon: "quantum",
+  },
+  {
+    name: "Agile",
+    icon: "agile",
+  },
 ];
