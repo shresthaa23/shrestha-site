@@ -29,15 +29,17 @@ const ImageSlider = () => {
                         <div key={index} className={index === current ? 'slide active' : 'slide'}>
                             {index === current && (
                             <div className="image-wrapper">
-                                <img src={`${project.title}`} alt={project.description} className="image"/>
+                                <img src={`${project.path}`} alt={project.title} className="image"/>
                                 <div className="overlay">
-                                    <p className="title">hiii</p>
-                                    <p className="description">asdf</p>
-                                    <p className="languages">dfgh</p>
+                                    <p className="title">{project.title}</p>
+                                    <p className="description">{project.description}</p>
+                                    <p className="languages">{project.languages}</p>
                                     {/* <p className="code">ghjk</p> */}
-                                    <a href="https://google.com" target="_blank" rel="noreferrer" className="code">
-                                        <FaExternalLinkAlt size="1.5rem" />
-                                    </a>
+                                    {project.link && (
+                                        <a href={project.link} target="_blank" rel="noreferrer" className="code">
+                                            <FaExternalLinkAlt size="1.5rem" />
+                                        </a>
+                                    )}
                                     {/* title -- description - langugaes - code link ideally */}
                                 </div>
                             </div>          
