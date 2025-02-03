@@ -28,7 +28,7 @@
 .about-me {
     font-size: 1rem; 
     line-height: 1.5; 
-    color: white;
+    color: "#F5E1C8";
     width: 100%; 
     text-align: left;
     margin-top: 0; 
@@ -83,7 +83,7 @@
     color: #333; 
     text-transform: capitalize; 
     text-align: center;
-    color: white;
+    color: #F5E1C8;
 }
   
 .about-box {
@@ -104,19 +104,15 @@
     /* outline: 4px solid blue;  */
     outline-offset: 5px; 
     
-    border: 3px solid white; 
-    border-radius: 10px; 
+    border: 3px solid #F5E1C8; 
+    border-radius: 10px;
     
-    box-shadow: 5px 5px 15px white; 
+    box-shadow: 5px 5px 15px #F5E1C8; 
     overflow: hidden;
 }
 
 .bolded-1 {
     color: #FFDD00  ;
-}
-
-.bolded-2 {
-    color: #FFDD00 ;
 }
 
 .text {
