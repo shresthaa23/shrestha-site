@@ -18,9 +18,9 @@
 .my-name {
     font-size: 2rem; 
     font-weight: 700; 
-    color: white;
+    color: #FFDD00;
     margin-bottom: 10px;
-    border-bottom: 2px solid white; 
+    border-bottom: 2px solid #FFDD00; 
     padding-bottom: 5px;
     display: inline-block;
 }
@@ -36,6 +36,7 @@
 
 .resume {
     text-decoration: none;
+    color: #FFDD00 ;
 }
 
 .resume:hover {
@@ -70,8 +71,8 @@
 }
   
 .marquee-img {
-    width: 100px; 
-    height: 100px;
+    width: 75px; 
+    height: 75px;
     border-radius: 8px;
 }
 
@@ -110,6 +111,14 @@
     overflow: hidden;
 }
 
+.bolded-1 {
+    color: #FFDD00  ;
+}
+
+.bolded-2 {
+    color: #FFDD00 ;
+}
+
 .text {
     flex: 1; 
     display: flex;
@@ -118,15 +127,10 @@
     justify-content: flex-start; 
 }
 
-.asdf {
-    flex-direction: column; 
-    align-items: flex-start; 
-    justify-content: flex-start; 
-}
-
 .about-me {
     flex: 1;
     padding-right: 20px;
+    font-size: 1.05rem;
 }
 
 .photo {
@@ -134,22 +138,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer; /* Make it clear the image is clickable */
-    width: 300px; /* Set a fixed width for the image container */
-    height: 300px; /* Set a fixed height for the image container */
-    overflow: hidden; /* Hide any part of the image that doesn't fit in the box */
+    cursor: pointer; 
+    width: 300px;
+    height: 100%; 
+    overflow: hidden;
 }
 
 .profile-photo {
-    width: 100%; /* Make the image take up the full width of the container */
-    height: 100%; /* Make the image take up the full height of the container */
-    object-fit: cover; /* This ensures the image covers the container without stretching */
-    transition: transform 0.3s ease; /* Smooth transition when hovering */
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    transition: transform 0.3s ease; 
     border-radius: 10px; 
 }
 
 .profile-photo:hover {
-    transform: scale(1.05); /* Slight zoom on hover */
+    transform: scale(1.05); 
     border-radius: 10px; 
 }
 

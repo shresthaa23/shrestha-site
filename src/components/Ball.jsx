@@ -76,7 +76,7 @@ const BallCanvas = ({ icon, label }) => {
           textAlign: "center",
           fontSize: "18px",
           fontWeight: "bold",
-          color: "#f1f1f1",
+          color: "#FFDD00",
         }}
       >
         {label}

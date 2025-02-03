@@ -1,17 +1,16 @@
 import "../styles/about-styles.css";
-import Marquee from "react-fast-marquee";
-import { likes, aboutMe } from "../constants";
+// import Marquee from "react-fast-marquee";
+// import { aboutMe } from "../constants";
 import { useState } from "react";
 
 const About = () => {
-
-  const [currentImage, setCurrentImage] = useState("/Me.jpg"); 
+  const [currentImage, setCurrentImage] = useState("/Me.jpg");
 
   const handleImageClick = () => {
     if (currentImage === "/Me2.jpg") {
-      setCurrentImage("/Me.jpg"); 
+      setCurrentImage("/Me.jpg");
     } else {
-      setCurrentImage("/Me2.jpg"); 
+      setCurrentImage("/Me2.jpg");
     }
   };
 
@@ -20,27 +19,65 @@ const About = () => {
       <div className="general-header">About Me</div>
       <div className="about-box">
         <div className="text">
-          <h1 className="my-name">
-            Alex Shrestha |{" "}
-            <a
-              className="resume"
-              href="/Resume.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Resume
-            </a>{" "}
-          </h1>
-          <p className="about-me"> {aboutMe} </p>
+          <h1 className="my-name">Alex Shrestha</h1>
+          <div className="about-me">
+            <p>
+              I&apos;m an undergraduate student at{" "}
+              <span className="bolded-1">The University of Maryland, College Park</span>, studying{" "}
+              <span className="bolded-1">Computer Science</span> with a minor in Economics. I&apos;m
+              also part of the Cybersecurity <span className="bolded-1">(ACES) Honors College</span>.
+              Passionate about learning, I strive to develop meaningful
+              solutions and push the boundaries of what&apos;s possible by
+              blending structured coding with innovative problem-solving. Check
+              out my{" "}
+              <a
+                className="resume"
+                href="/Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                resume
+              </a>.
+            </p>
+            <br />
+            <h3 className="bolded-1">Experiences:</h3>
+            <ul>
+              <li>👨‍💻 SWE Intern @ Northrop Grumman</li>
+              <li>👨‍💻 Engineer @ US News App Dev Team</li>
+              <li>👨‍💻 Product Management Fellow @ Product Space</li>
+            </ul>
+            <br />
+            <h3 className="bolded-1">Random Interests:</h3>
+            <p>
+              🦇👨 | 🏈 | 🐦🟣 | 🏀👑 | 🎬 | 💪🏋️‍♂️ | 🎮🕹️ | 🥩 | 🍣 | 💻 | 🛏️💤
+            </p>
+          </div>
+          {/* <div className="about-me">
+            {" "}
+            <p>
+              I&apos;m an undergraduate student at <b>The University of Maryland,
+              College Park</b>, studying <b>Computer Science</b> with a minor in Economics;
+              and I&apos;m part of the <b>Cybersecurity (ACES) Honors College</b>.
+              I&apos;m driven with an eagerness to learn, develop meaningful
+              solutions and push the boundaries of what&apos;s possible by
+              combining structured coding and imaginative approaches.
+            </p>{" "}
+            <br/>
+            <p>
+              My experiences: Engineer @ US News App Dev Team, SWE Intern @
+              Northrop Grumman, Product Management Fellow @ Product Space.
+            </p>
+            <br/>
+            <p>
+              My personal interests: 🦇👨,🏈,🐦🟣,🏀👑, 💪🏋️‍♂️, 🎮🕹️, 🥩, 🍣,, 💻,
+              🛏️💤, 🎬
+            </p>
+          </div> */}
         </div>
         <div className="photo" onClick={handleImageClick}>
-          <img
-            src={currentImage}
-            alt="Photo of Me"
-            className="profile-photo"
-          />
+          <img src={currentImage} alt="Photo of Me" className="profile-photo" />
         </div>
-        <Marquee speed={50} pauseOnHover>
+        {/* <Marquee speed={50} pauseOnHover>
           {likes.map((img, index) => (
             <div key={index} className="marquee-item">
               <img
@@ -48,10 +85,12 @@ const About = () => {
                 alt={`${index}`}
                 className="marquee-img"
               />
-              <div className="image-caption">{img}</div>
+              <div className="image-caption">{img}</div>  
             </div>
           ))}
-        </Marquee>
+        </Marquee> 
+        also fix the captions of this too if needed
+        */}
       </div>
     </section>
   );
