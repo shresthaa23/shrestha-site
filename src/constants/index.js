@@ -46,6 +46,15 @@ export const projects = [
     { 
         title: "https://iso.500px.com/wp-content/uploads/2016/11/stock-photo-159533631.jpg", description: "Alice", link1: 30, link2: "asdf", 
     },
+    { 
+        title: "/icons/projects/Dynamic Soccer 1.png", description: "Alice", link1: 30, link2: "asdf", 
+    },
+    { 
+      title: "/icons/projects/Dynamic Soccer 2.png", description: "Alice", link1: 30, link2: "asdf", 
+    },
+    { 
+        title: "/icons/projects/Soccer.png", description: "Alice", link1: 30, link2: "asdf", 
+    },
 ];
 
 export const technologies = [
