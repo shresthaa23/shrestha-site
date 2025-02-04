@@ -30,7 +30,7 @@ const About = () => {
               out my{" "}
               <a
                 className="resume"
-                href="public/Resume.pdf"
+                href="Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
               >
