@@ -30,8 +30,8 @@ const About = () => {
               out my{" "}
               <a
                 className="resume"
-                href={`${import.meta.env.BASE_URL}My-Resume.pdf`}
                 target="_blank"
+                href={`${import.meta.env.BASE_URL}My-Resume.pdf`}
                 rel="noopener noreferrer"
               >
                 resume
