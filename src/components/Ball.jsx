@@ -63,7 +63,7 @@ const BallCanvas = ({ icon, label }) => {
       >
         <Suspense fallback={<Loader />}>
           <OrbitControls enablePan={false} enableZoom={false} />
-          <Ball imgUrl={`/icons/skills/${icon}.png`} />
+          <Ball imgUrl={`public/icons/skills/${icon}.png`} />
         </Suspense>
         <Preload all />
       </Canvas>

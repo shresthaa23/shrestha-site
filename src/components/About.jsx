@@ -4,13 +4,13 @@ import "../styles/about-styles.css";
 import { useState } from "react";
 
 const About = () => {
-  const [currentImage, setCurrentImage] = useState("/Me.jpg");
+  const [currentImage, setCurrentImage] = useState("public/Me.jpg");
 
   const handleImageClick = () => {
-    if (currentImage === "/Me2.jpg") {
-      setCurrentImage("/Me.jpg");
+    if (currentImage === "public/Me2.jpg") {
+      setCurrentImage("public/Me.jpg");
     } else {
-      setCurrentImage("/Me2.jpg");
+      setCurrentImage("public/Me2.jpg");
     }
   };
 
@@ -32,7 +32,7 @@ const About = () => {
               out my{" "}
               <a
                 className="resume"
-                href="/Resume.pdf"
+                href="public/Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
               >
