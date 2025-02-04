@@ -30,10 +30,6 @@ export const skills = [
   "Jira",
 ];
 
-export const aboutMe =
-  "Welcome to my project! 🎉Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur velit tellus, tempus in dui vel, scelerisque dignissim tortor. Aliquam nec sollicitudin mi. Donec vel urna vel ex molestie condimentum. Etiam sit amet ex nec arcu efficitur venenatis. Ut quis mauris elit. Aenean viverra erat metus, vitae eleifend leo ultricies eu. Sed porta velit vulputate felis feugiat, non aliquet ex aliquet. Aliquam at accumsan mi, et venenatis tortor. Cras faucibus lorem sed nisi vehicula euismod. Nunc varius est orci, non pretium tellus dignissim et. Ut placerat mi lacus, at volutpat justo elementum vestibulum. Integer vel turpis vel massa efficitur faucibus. Donec nec ornare ipsum, id blandit sem. Maecenas eget odio non odio efficitur congue malesuada ac nulla.";
-
-
 // stock images
 /*
   https://letsenhance.io/static/73136da51c245e80edc6ccfe44888a99/1015f/MainBefore.jpg 
@@ -42,16 +38,16 @@ export const aboutMe =
 */
 export const projects = [
     { 
-      path: "/icons/projects/Honeypot.png", title: "Honeypot Project", description: "Alice", languages: "asdf", link: "", 
+      path: "/icons/projects/Honeypot.png", title: "Honeypot Project", description: "Engineered Linux containers simulating academic institutions to study attack behavior under distinct welcome banner messages, analyzing over 9000 attacks to uncover patterns in attacker behavior.", languages: "Bash Shell Scripting, Python, Git", link: "", 
     },
     { 
-      path: "/icons/projects/TouchGrass.png", title: "Touching Grass App", description: "Alice", languages: "asdf", link: "", 
+      path: "/icons/projects/TouchGrass.png", title: "Touching Grass App", description: "Developed the foundational components of a social media app in 36 hours during the Bitcamp Hackathon. The app allowed users to take photos of environmental destruction, earn points and track progress, inspired by Instagram and Pokemon Go.", languages: "React Native, JavaScript, CSS, Git", link: "", 
     },
     { 
-      path: "/icons/projects/Maze.png", title: "Mazes Solver", description: "Alice", languages: "asdf", link: "", 
+      path: "/icons/projects/Maze.png", title: "Maze Solver", description: "Converted large-scale mazes into graphs, mapping all nodes to an x-y coordinate system. Found the optimal solution 100% of the time using Dijkstra's algorithm, breadth-first and depth-first searches.", languages: "Java", link: "", 
     },      
     { 
-      path: "/icons/projects/Soccer.png", title: "Dynamic Soccer Ball", description: "Alice", languages: "Figma", link: "https://www.figma.com/proto/riuULK8sholAHFUfmXm2FR/Dynamic-Soccer-Ball-App?node-id=2-2&p=f&t=9Dyg8KCzjmHoqDVz-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=2%3A2",
+      path: "/icons/projects/Soccer.png", title: "Dynamic Soccer Ball", description: "Prototyped an app for a dynamic soccer ball that tracks training sessions and statistics, allowing users to compare with friends. Went through the product management lifecycle, from conceptualizing to MVP creation, financial planning and prototyping.", languages: "Figma", link: "https://www.figma.com/proto/riuULK8sholAHFUfmXm2FR/Dynamic-Soccer-Ball-App?node-id=2-2&p=f&t=9Dyg8KCzjmHoqDVz-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=2%3A2",
     },
 ];
 

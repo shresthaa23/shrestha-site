@@ -95,6 +95,7 @@
     margin-bottom: 30px;
     text-align: center;
     border-bottom: 2px solid black; 
+    font-weight: bold;
 }
   
 .description {
@@ -103,13 +104,12 @@
     font-size: 1.3rem;
     text-align: center;
     font-weight: 400;
-    margin-top: 30px;
 }
 
 .languages {
     width: 80%;
     max-width: 80%;
-    font-size: 1rem;
+    font-size: 1.5rem;
     text-align: center;
     font-weight: 300;
     margin-top: 30px;
@@ -153,12 +153,13 @@
     left: 0;
     width: 100%;  
     height: 100%;
+    /* choose a good color lol */
     background-color: rgba(255, 255, 255, 0.7);
     background-color: rgba(255, 87, 34, 0.8); /* Warm orange overlay */
     background-color: rgba(245, 224, 183, 0.8); /* Light beige overlay */
     background-color: rgba(255, 209, 161, 0.8); /* Light peach overlay */
     background-color: rgba(225, 183, 212, 0.8); /* Light lavender overlay */
-    background-color: rgba(241, 194, 125, 0.8); /* Light warm gold overlay */
+    background-color: rgba(241, 194, 125, 0.9); /* Light warm gold overlay */
     display: flex;
     flex-direction: column;
     justify-content: center;
