@@ -29,7 +29,7 @@ const ImageSlider = () => {
                         <div key={index} className={index === current ? 'slide active' : 'slide'}>
                             {index === current && (
                             <div className="image-wrapper">
-                                <img src={`${project.path}`} alt={project.title} className="image"/>
+                                <img src={`${import.meta.env.BASE_URL}${project.path}`} alt={project.title} className="image"/>
                                 <div className="overlay">
                                     <p className="title">{project.title}</p>
                                     <p className="description">{project.description}</p>

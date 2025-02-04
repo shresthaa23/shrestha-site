@@ -4,16 +4,16 @@ import "../styles/about-styles.css";
 import { useState } from "react";
 
 const About = () => {
-  const [currentImage, setCurrentImage] = useState("/shrestha-site/Me.jpg");
+  const [currentImage, setCurrentImage] = useState(`${import.meta.env.BASE_URL}Me.jpg`);
 
   const handleImageClick = () => {
-    if (currentImage === "/shrestha-site/Me2.jpg") {
-      setCurrentImage("/shrestha-site/Me.jpg");
-    } else {
-      setCurrentImage("/shrestha-site/Me2.jpg");
-    }
+    setCurrentImage((prevImage) =>
+      prevImage === `${import.meta.env.BASE_URL}Me2.jpg`
+        ? `${import.meta.env.BASE_URL}Me.jpg`
+        : `${import.meta.env.BASE_URL}Me2.jpg`
+    );
   };
-
+  
   return (
     <section id="About" className="container">
       <div className="general-header">About Me</div>
@@ -26,9 +26,7 @@ const About = () => {
               <span className="bolded-1">The University of Maryland, College Park</span>, studying{" "}
               <span className="bolded-1">Computer Science</span> with a minor in Economics. I&apos;m
               also part of the <span className="bolded-1">Cybersecurity (ACES) Honors College</span>.
-              Driven with passion about learning, I aim to develop meaningful
-              solutions and push the boundaries of what&apos;s possible by
-              blending structured coding with innovative problem-solving. Check
+              I&apos;m driven with a passion to learn, develop meaningful solutions and push the boundaries of what&apos;s possible by combining logical coding and innovative problem-solving. Check
               out my{" "}
               <a
                 className="resume"
