@@ -1,3 +1,3 @@
 # My-Website
-this is a work in progress
-itll finish soon hopefully idk
+You can view the site [here](https://shresthaa23.github.io/shrestha-site/). 
+please don't view it on mobile for now
