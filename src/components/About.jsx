@@ -4,13 +4,13 @@ import "../styles/about-styles.css";
 import { useState } from "react";
 
 const About = () => {
-  const [currentImage, setCurrentImage] = useState(`/Me.jpg`);
+  const [currentImage, setCurrentImage] = useState(`Me.jpg`);
 
   const handleImageClick = () => {
     setCurrentImage((prevImage) =>
-      prevImage === `/Me2.jpg`
-        ? `/Me.jpg`
-        : `/Me2.jpg`
+      prevImage === `Me2.jpg`
+        ? `Me.jpg`
+        : `Me2.jpg`
     );
   };
   
@@ -38,9 +38,10 @@ const About = () => {
               </a>.
             </p>
             <br />
-            <h3 className="bolded-1">Experiences:</h3>
+            <h3 className="bolded-1">My Experiences:</h3>
             <ul>
               <li>👨‍💻 SWE Intern @ Northrop Grumman</li>
+              <li>👨‍💻 Cybersecurity Researcher @ Breakerspace</li>
               <li>👨‍💻 Engineer @ US News App Dev Team</li>
               <li>👨‍💻 Product Management Fellow @ Product Space</li>
             </ul>
