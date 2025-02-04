@@ -52,27 +52,6 @@ const About = () => {
               🦇👨 | 🏈 | 🐦🟣 | 🏀👑 | 🎬 | 💪🏋️‍♂️ | 🎮🕹️ | 🥩 | 🍣 | 💻 | 🛏️💤
             </p>
           </div>
-          {/* <div className="about-me">
-            {" "}
-            <p>
-              I&apos;m an undergraduate student at <b>The University of Maryland,
-              College Park</b>, studying <b>Computer Science</b> with a minor in Economics;
-              and I&apos;m part of the <b>Cybersecurity (ACES) Honors College</b>.
-              I&apos;m driven with an eagerness to learn, develop meaningful
-              solutions and push the boundaries of what&apos;s possible by
-              combining structured coding and imaginative approaches.
-            </p>{" "}
-            <br/>
-            <p>
-              My experiences: Engineer @ US News App Dev Team, SWE Intern @
-              Northrop Grumman, Product Management Fellow @ Product Space.
-            </p>
-            <br/>
-            <p>
-              My personal interests: 🦇👨,🏈,🐦🟣,🏀👑, 💪🏋️‍♂️, 🎮🕹️, 🥩, 🍣,, 💻,
-              🛏️💤, 🎬
-            </p>
-          </div> */}
         </div>
         <div className="photo" onClick={handleImageClick}>
           <img src={currentImage} alt="Photo of Me" className="profile-photo" />
