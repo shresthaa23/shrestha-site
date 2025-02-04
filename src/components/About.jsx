@@ -4,13 +4,13 @@ import "../styles/about-styles.css";
 import { useState } from "react";
 
 const About = () => {
-  const [currentImage, setCurrentImage] = useState(`${import.meta.env.BASE_URL}Me.jpg`);
+  const [currentImage, setCurrentImage] = useState(`./shrestha-site/Me.jpg`);
 
   const handleImageClick = () => {
     setCurrentImage((prevImage) =>
-      prevImage === `${import.meta.env.BASE_URL}Me2.jpg`
-        ? `${import.meta.env.BASE_URL}Me.jpg`
-        : `${import.meta.env.BASE_URL}Me2.jpg`
+      prevImage === `./shrestha-site/Me2.jpg`
+        ? `./shrestha-site/Me.jpg`
+        : `./shrestha-site/Me2.jpg`
     );
   };
   

@@ -63,7 +63,7 @@ const BallCanvas = ({ icon, label }) => {
       >
         <Suspense fallback={<Loader />}>
           <OrbitControls enablePan={false} enableZoom={false} />
-          <Ball imgUrl={`${import.meta.env.BASE_URL}/icons/skills/${icon}.png`} />
+          <Ball imgUrl={`./shrestha-site/icons/skills/${icon}.png`} />
           </Suspense>
         <Preload all />
       </Canvas>
