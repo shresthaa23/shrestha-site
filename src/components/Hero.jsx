@@ -6,7 +6,7 @@ const Hero = () => {
     <section id="Hero" className="container">
       <motion.div initial={{ opacity: 0, y: -50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} className="hero-content">
         <div className="hero-header"> Hey, I&apos;m Alex. </div>
-        <p className="hero-subheader"> I code and stuff. This is a work in progress! </p>
+        <p className="hero-subheader"> I code and do other things. </p>
       </motion.div>
     </section>
   );

@@ -25,7 +25,7 @@ const About = () => {
               I&apos;m an undergraduate student at{" "}
               <span className="bolded-1">The University of Maryland, College Park</span>, studying{" "}
               <span className="bolded-1">Computer Science</span> with a minor in Economics. I&apos;m
-              also part of the Cybersecurity <span className="bolded-1">(ACES) Honors College</span>.
+              also part of the <span className="bolded-1">Cybersecurity (ACES) Honors College</span>.
               Passionate about learning, I strive to develop meaningful
               solutions and push the boundaries of what&apos;s possible by
               blending structured coding with innovative problem-solving. Check
