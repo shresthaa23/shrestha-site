@@ -41,7 +41,7 @@ export const projects = [
       path: "/icons/projects/Honeypot.png", title: "Honeypot Project", description: "Engineered Linux containers simulating academic institutions to study attack behavior under distinct welcome banner messages, analyzing over 9000 attacks to uncover patterns in attacker behavior.", languages: "Bash Shell Scripting, Python, Git", link: "", 
     },
     { 
-      path: "/icons/projects/TouchGrass.png", title: "Touching Grass App", description: "Developed the foundational components of a social media app in 36 hours during the Bitcamp Hackathon. The app allowed users to take photos of environmental destruction, earn points and track progress, inspired by Instagram and Pokemon Go.", languages: "React Native, JavaScript, CSS, Git", link: "", 
+      path: "/icons/projects/TouchGrass.png", title: "Touching Grass App", description: "Developed the foundational components of a social media app in 36 hours during the Bitcamp Hackathon. While the app was in its early stages, it allowed users to take photos of environmental destruction, earn points and track progress, inspired by Instagram and Pokemon Go.", languages: "React Native, JavaScript, CSS, Git", link: "", 
     },
     { 
       path: "/icons/projects/Maze.png", title: "Maze Solver", description: "Converted large-scale mazes into graphs, mapping all nodes to an x-y coordinate system. Found the optimal solution 100% of the time using Dijkstra's algorithm, breadth-first and depth-first searches.", languages: "Java", link: "", 
