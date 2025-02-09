@@ -1,14 +1,14 @@
-import "../styles/skills-styles.css";
+import styles from "../styles/skills.module.css";
 import { technologies } from "../constants";
 import BallCanvas from "./Ball";
 
 const Skills = () => {
   return (
-    <section id="Skills" className="container">
-      <div className="general-header"> Skills </div>
-        <div className="technologies-container">
+    <section id="Skills" className={styles.container}>
+      <div className={styles.generalHeader}> Skills </div>
+        <div className={styles.technologiesContainer}>
           {technologies.map((technology) => (
-            <div className="technology-item" key={technology.name}>
+            <div className={styles.technologyItem} key={technology.name}>
               <BallCanvas icon={technology.icon} label={technology.name} />
             </div>
           ))}

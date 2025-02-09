@@ -1,10 +1,10 @@
-import "../../styles/project-styles.css";
+import styles from "../../styles/project.module.css";
 import ImageSlider from "./ImageSlider";
 
 const Projects = () => {
   return (
-    <section id="Projects" className="container">
-      <div className="general-header">Projects</div>
+    <section id="Projects" className={styles.container}>
+      <div className={styles.generalHeader}>Projects</div>
       <ImageSlider />
     </section>
   );

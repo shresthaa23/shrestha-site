@@ -1,9 +1,9 @@
-import "../styles/nav-styles.css";
+import styles from "../styles/nav.module.css";
 
 const Navbar = () => {
   return (
-    <nav className="nav">
-      <a href="#Hero" className="nav-title">
+    <nav className={styles.nav}>
+      <a href="#Hero" className={styles.navTitle}>
         Alex Shrestha
       </a>
       <ul>

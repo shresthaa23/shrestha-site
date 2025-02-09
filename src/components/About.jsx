@@ -1,4 +1,4 @@
-import "../styles/about-styles.css";
+import styles from "../styles/about.module.css";
 // import Marquee from "react-fast-marquee";
 // import { aboutMe } from "../constants";
 import { useState } from "react";
@@ -15,21 +15,21 @@ const About = () => {
   };
   
   return (
-    <section id="About" className="container">
-      <div className="general-header">About Me</div>
-      <div className="about-box">
-        <div className="text">
-          <h1 className="my-name">Alex Shrestha</h1>
-          <div className="about-me">
+    <section id="About" className={styles.container}>
+      <div className={styles.generalHeader}>About Me</div>
+      <div className={styles.aboutBox}>
+        <div className={styles.text}>
+          <h1 className={styles.myName}>Alex Shrestha</h1>
+          <div className={styles.aboutMe}>
             <p>
               I&apos;m an undergraduate student at{" "}
-              <span className="bolded-1">The University of Maryland, College Park</span>, studying{" "}
-              <span className="bolded-1">Computer Science</span> with a minor in Economics. I&apos;m
-              also part of the <span className="bolded-1">Cybersecurity (ACES) Honors College</span>.
+              <span className={styles.bolded}>The University of Maryland, College Park</span>, studying{" "}
+              <span className={styles.bolded}>Computer Science</span> with a minor in Economics. I&apos;m
+              also part of the <span className={styles.bolded}>Cybersecurity (ACES) Honors College</span>.
               I&apos;m driven with a passion to learn, develop meaningful solutions and push the boundaries of what&apos;s possible by combining logical coding and innovative problem-solving. Check
               out my{" "}
               <a
-                className="resume"
+                className={styles.resume}
                 target="_blank"
                 href={`${import.meta.env.BASE_URL}My-New-Resume.pdf`}
                 rel="noopener noreferrer"
@@ -38,7 +38,7 @@ const About = () => {
               </a>!
             </p>
             <br />
-            <h3 className="bolded-1">My Experiences:</h3>
+            <h3 className={styles.bolded}>My Experiences:</h3>
             <ul>
               <li>👨‍💻 SWE Intern @ Northrop Grumman</li>
               <li>👨‍💻 Cybersecurity Researcher @ Breakerspace</li>
@@ -46,24 +46,24 @@ const About = () => {
               <li>👨‍💻 Product Management Fellow @ Product Space</li>
             </ul>
             <br />
-            <h3 className="bolded-1">Random Interests:</h3>
+            <h3 className={styles.bolded}>Random Interests:</h3>
             <p>
               🦇👨 | 🏈 | 🐦🟣 | 🏀👑 | 🎬 | 💪🏋️‍♂️ | 🎮🕹️ | 🥩 | 🍣 | 💻 | 🛏️💤
             </p>
           </div>
         </div>
-        <div className="photo" onClick={handleImageClick}>
-          <img src={currentImage} alt="Photo of Me" className="profile-photo" />
+        <div className={styles.photo} onClick={handleImageClick}>
+          <img src={currentImage} alt="Photo of Me" className={styles.profilePhoto} />
         </div>
         {/* <Marquee speed={50} pauseOnHover>
           {likes.map((img, index) => (
-            <div key={index} className="marquee-item">
+            <div key={index} className={styles.marquee-item}>
               <img
                 src={`../../icons/images/${img}.png`}
                 alt={`${index}`}
-                className="marquee-img"
+                className={styles.marquee-img}
               />
-              <div className="image-caption">{img}</div>  
+              <div className={styles.image-caption}>{img}</div>  
             </div>
           ))}
         </Marquee> 
