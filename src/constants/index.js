@@ -102,7 +102,7 @@ export const technologies = [
   },
   {
     name: "Quantum",
-    icon: "quantum",
+    icon: "quantum2",
   },
   {
     name: "Cybersecurity",

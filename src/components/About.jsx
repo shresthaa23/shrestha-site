@@ -31,11 +31,11 @@ const About = () => {
               <a
                 className="resume"
                 target="_blank"
-                href={`${import.meta.env.BASE_URL}My-Resume.pdf`}
+                href={`${import.meta.env.BASE_URL}My-New-Resume.pdf`}
                 rel="noopener noreferrer"
               >
                 resume
-              </a>.
+              </a>!
             </p>
             <br />
             <h3 className="bolded-1">My Experiences:</h3>
