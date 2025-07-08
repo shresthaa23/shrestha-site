@@ -31,7 +31,7 @@ const About = () => {
               <a
                 className={styles.resume}
                 target="_blank"
-                href={`${import.meta.env.BASE_URL}NewResume2025Summer.pdf`}
+                href={`${import.meta.env.BASE_URL}Resume_Summer_2025.pdf`}
                 rel="noopener noreferrer"
               >
                 resume
@@ -40,9 +40,9 @@ const About = () => {
             <br />
             <h3 className={styles.bolded}>My Experiences:</h3>
             <ul>
-              <li>👨‍💻 SWE Intern @ Northrop Grumman</li>
-              <li>👨‍💻 Cybersecurity Researcher @ Breakerspace</li>
-              <li>👨‍💻 Engineer @ US News App Dev Team</li>
+              <li>👨‍💻 SWE Intern @ Leidos, Northrop Grumman, Dalex Softworks</li>
+              <li>👨‍💻 Engineer @ US News UMD App Dev Team</li>
+              <li>👨‍💻 Cybersecurity Researcher @ Breakerspace UMD</li>
               <li>👨‍💻 Product Management Fellow @ Product Space</li>
             </ul>
             <br />
