@@ -31,7 +31,7 @@ const About = () => {
               <a
                 className={styles.resume}
                 target="_blank"
-                href={`${import.meta.env.BASE_URL}My-New-Resume.pdf`}
+                href={`${import.meta.env.BASE_URL}NewResume2025Summer.pdf`}
                 rel="noopener noreferrer"
               >
                 resume
