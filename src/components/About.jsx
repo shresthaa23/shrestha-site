@@ -8,9 +8,9 @@ const About = () => {
 
   const handleImageClick = () => {
     setCurrentImage((prevImage) =>
-      prevImage === `Me2.jpg`
+      prevImage === `Me3.jpg`
         ? `Me.jpg`
-        : `Me2.jpg`
+        : `Me3.jpg`
     );
   };
   
@@ -31,7 +31,7 @@ const About = () => {
               <a
                 className={styles.resume}
                 target="_blank"
-                href={`${import.meta.env.BASE_URL}Resume_Summer_2025.pdf`}
+                href={`${import.meta.env.BASE_URL}Alex_Shrestha_Resume.pdf`}
                 rel="noopener noreferrer"
               >
                 resume
@@ -55,20 +55,6 @@ const About = () => {
         <div className={styles.photo} onClick={handleImageClick}>
           <img src={currentImage} alt="Photo of Me" className={styles.profilePhoto} />
         </div>
-        {/* <Marquee speed={50} pauseOnHover>
-          {likes.map((img, index) => (
-            <div key={index} className={styles.marquee-item}>
-              <img
-                src={`../../icons/images/${img}.png`}
-                alt={`${index}`}
-                className={styles.marquee-img}
-              />
-              <div className={styles.image-caption}>{img}</div>  
-            </div>
-          ))}
-        </Marquee> 
-        also fix the captions of this too if needed
-        */}
       </div>
     </section>
   );

@@ -113,3 +113,44 @@ export const technologies = [
     icon: "agile",
   },
 ];
+
+export const experiences = [
+  {
+    company: "Leidos",
+    role: "Software Engineering Intern",
+    date: "Summer 2025",
+    description: "Streamlined 20+ steps and cut process time by 60% through automation.",
+    logo: "./experiences/leidos.png",
+  },
+  {
+    company: "Dalex Softworks Holdings",
+    role: "Software Engineering Intern",
+    date: "Summer 2025",
+    description: "Streamlined 20+ steps and cut process time by 60% through automation.",
+    logo: "./experiences/dalex.jpg",
+    link: "https://www.linkedin.com/company/dalex-softworks-holdings/",
+  },
+  {
+    company: "Northrop Grumman",
+    role: "Software Engineering Intern",
+    date: "Summer 2024",
+    description: "Streamlined 20+ steps and cut process time by 60% through automation.",
+    logo: "./experiences/northrop.jpg", 
+  },
+  {
+    company: "US News App Dev Team",
+    role: "Full Stack Developer",
+    date: "2024 - 2025",
+    description: "Streamlined 20+ steps and cut process time by 60% through automation.",
+    logo: "./experiences/appdev.jpg",
+  },
+  {
+    company: "Breakerspace Research",
+    role: "Cybersecurity Research Assistant",
+    date: "2024 – Present",
+    description: "Built honeypot system that logged 1,200+ intrusion attempts in 2 weeks.",
+    logo: "./experiences/breakerspace.png",
+    link: "https://breakerspace.cs.umd.edu/",
+  },
+];
+
