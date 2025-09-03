@@ -32,7 +32,11 @@ const Loader = () => {
 };
 
 const Ball = (props) => {
-  const [decal] = useTexture([props.imgUrl]);
+  const [decal] = useTexture([props.imgUrl], () => {
+    console.log(`Successfully loaded texture: ${props.imgUrl}`);
+  }, (error) => {
+    console.error(`Failed to load texture: ${props.imgUrl}`, error);
+  });
 
   return (
     <Float speed={1.75} rotationIntensity={1} floatIntensity={2}>
@@ -54,6 +58,8 @@ const Ball = (props) => {
 };
 
 const BallCanvas = ({ icon, label }) => {
+  const imgUrl = `skills/${icon}.png`;
+  
   return (
     <div style={{ textAlign: "center", position: "relative" }}>
       <Canvas
@@ -63,7 +69,7 @@ const BallCanvas = ({ icon, label }) => {
       >
         <Suspense fallback={<Loader />}>
           <OrbitControls enablePan={false} enableZoom={false} />
-          <Ball imgUrl={`skills/${icon}.png`} />
+          <Ball imgUrl={imgUrl} />
           </Suspense>
         <Preload all />
       </Canvas>

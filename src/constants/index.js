@@ -55,61 +55,85 @@ export const technologies = [
   {
     name: "Java",
     icon: "java",
+    category: "Languages"
   },
   {
     name: "Python",
     icon: "python",
+    category: "Languages"
   },
   {
     name: "C",
     icon: "c",
+    category: "Languages"
   },
   {
-    name: "Bash Shell",
-    icon: "bash",
+    name: "C#",
+    icon: "csharp",
+    category: "Languages"
   },
   {
     name: "JavaScript",
     icon: "javascript",
+    category: "Languages"
   },
+  {
+    name: "TypeScript",
+    icon: "typescript",
+    category: "Languages"
+  },
+  {
+    name: "HTML/CSS",
+    icon: "htmlcss",
+    category: "Languages"
+  },
+  {
+    name: "Bash Shell",
+    icon: "bash",
+    category: "Languages"
+  },
+  
   {
     name: "React.js",
     icon: "react",
+    category: "Frameworks"
   },
   {
-    name: "HTML",
-    icon: "html",
+    name: "Node.js",
+    icon: "node",
+    category: "Frameworks"
   },
   {
-    name: "CSS",
-    icon: "css",
+    name: ".NET",
+    icon: "net",
+    category: "Frameworks"
   },
+  {
+    name: "Qiskit",
+    icon: "qiskit",
+    category: "Frameworks"
+  },
+
+  
   {
     name: "Git",
     icon: "git",
+    category: "Dev Tools"
   },
   {
     name: "Linux",
     icon: "linux",
+    category: "Dev Tools"
   },
   {
-    name: "Figma",
-    icon: "figma",
+    name: "Flask",
+    icon: "flask",
+    category: "Dev Tools"
   },
   {
     name: "MATLAB",
     icon: "matlab",
+    category: "Dev Tools"
   },
-  {
-    name: "Quantum",
-    icon: "quantum2",
-  },
-  {
-    name: "Cybersecurity",
-    icon: "cybersecurity",
-  },
-  {
-    name: "Agile",
-    icon: "agile",
-  },
+
 ];
