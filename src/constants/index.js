@@ -41,11 +41,14 @@ export const projects = [
       path: "projects/Honeypot.png", title: "Honeypot Project", description: "Engineered Linux containers simulating academic institutions to study attack behavior under distinct welcome banner messages, analyzing over 9000 attacks to uncover patterns in attacker behavior.", languages: "Bash Shell Scripting, Python, Git", link: "", 
     },
     { 
-      path: "projects/TouchGrass.png", title: "Touching Grass App", description: "Developed the foundational components of a social media app in 36 hours during the Bitcamp Hackathon. While the app was in its early stages, it allowed users to take photos of environmental destruction, earn points and track progress, inspired by Instagram and Pokemon Go.", languages: "React Native, JavaScript, CSS, Git", link: "", 
+      path: "projects/BrowserBuddy.png", title: "Browser Buddy Extension", description: "Created a virtual wellness pet extension in under 24 hours at Bitcamp Hackathon. The extension implements a pomodoro timer to help user take active breaks and gamify working sessions with XP and shop tokens for the customizable pet.", languages: "React, Typescript, Git, CSS", link: "", 
     },
     { 
       path: "projects/Maze.png", title: "Maze Solver", description: "Converted large-scale mazes into graphs, mapping all nodes to an x-y coordinate system. Found the optimal solution 100% of the time using Dijkstra's algorithm, breadth-first and depth-first searches.", languages: "Java", link: "", 
-    },      
+    },  
+    { 
+      path: "projects/TouchGrass.png", title: "Touching Grass App", description: "Developed the foundational components of a social media app in 36 hours during the Bitcamp Hackathon. While the app was in its early stages, it allowed users to take photos of environmental destruction, earn points and track progress, inspired by Instagram and Pokemon Go.", languages: "React Native, JavaScript, CSS, Git", link: "", 
+    },
     { 
       path: "projects/Soccer.png", title: "Dynamic Soccer Ball", description: "Prototyped an app for a dynamic soccer ball that tracks training sessions and statistics, allowing users to compare with friends. Went through the product management lifecycle, from conceptualizing to MVP creation, financial planning and prototyping.", languages: "Figma", link: "https://www.figma.com/proto/riuULK8sholAHFUfmXm2FR/Dynamic-Soccer-Ball-App?node-id=2-2&p=f&t=9Dyg8KCzjmHoqDVz-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=2%3A2",
     },
@@ -55,63 +58,87 @@ export const technologies = [
   {
     name: "Java",
     icon: "java",
+    category: "Languages"
   },
   {
     name: "Python",
     icon: "python",
+    category: "Languages"
   },
   {
     name: "C",
     icon: "c",
+    category: "Languages"
   },
   {
-    name: "Bash Shell",
-    icon: "bash",
+    name: "C#",
+    icon: "csharp",
+    category: "Languages"
   },
   {
     name: "JavaScript",
     icon: "javascript",
+    category: "Languages"
   },
+  {
+    name: "TypeScript",
+    icon: "typescript",
+    category: "Languages"
+  },
+  {
+    name: "HTML/CSS",
+    icon: "htmlcss",
+    category: "Languages"
+  },
+  {
+    name: "Bash Shell",
+    icon: "bash",
+    category: "Languages"
+  },
+  
   {
     name: "React.js",
     icon: "react",
+    category: "Frameworks"
   },
   {
-    name: "HTML",
-    icon: "html",
+    name: "Node.js",
+    icon: "node",
+    category: "Frameworks"
   },
   {
-    name: "CSS",
-    icon: "css",
+    name: ".NET",
+    icon: "net",
+    category: "Frameworks"
   },
+  {
+    name: "Qiskit",
+    icon: "qiskit",
+    category: "Frameworks"
+  },
+
+  
   {
     name: "Git",
     icon: "git",
+    category: "Dev Tools"
   },
   {
     name: "Linux",
     icon: "linux",
+    category: "Dev Tools"
   },
   {
-    name: "Figma",
-    icon: "figma",
+    name: "Flask",
+    icon: "flask",
+    category: "Dev Tools"
   },
   {
     name: "MATLAB",
     icon: "matlab",
+    category: "Dev Tools"
   },
-  {
-    name: "Quantum",
-    icon: "quantum2",
-  },
-  {
-    name: "Cybersecurity",
-    icon: "cybersecurity",
-  },
-  {
-    name: "Agile",
-    icon: "agile",
-  },
+
 ];
 
 export const experiences = [
