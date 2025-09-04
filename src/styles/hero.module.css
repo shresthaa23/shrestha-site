@@ -56,3 +56,132 @@
     width: 80vw;
   }
 }
+
+/* Shooting Star Animations */
+
+.shootingStar {
+  position: absolute;
+  top: 20%;
+  left: -50px;
+  width: 4px;
+  height: 4px;
+  background: #00D8FF;
+  border-radius: 50%;
+  box-shadow: 0 0 20px #00D8FF, 0 0 40px #00D8FF, 0 0 60px #00D8FF;
+  animation: shootingStar1 8s linear infinite;
+  z-index: 1;
+}
+
+.shootingStar::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 2px;
+  background: linear-gradient(90deg, #00D8FF, transparent);
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+.shootingStar2 {
+  position: absolute;
+  top: 40%;
+  left: -50px;
+  width: 3px;
+  height: 3px;
+  background: #00D8FF;
+  border-radius: 50%;
+  border-radius: 50%;
+  box-shadow: 0 0 15px #00D8FF, 0 0 30px #00D8FF, 0 0 45px #00D8FF;
+  animation: shootingStar2 12s linear infinite;
+  z-index: 1;
+}
+
+.shootingStar2::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80px;
+  height: 1px;
+  background: linear-gradient(90deg, #00D8FF, transparent);
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+.shootingStar3 {
+  position: absolute;
+  top: 60%;
+  left: -50px;
+  width: 2px;
+  height: 2px;
+  background: #00D8FF;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #00D8FF, 0 0 20px #00D8FF, 0 0 30px #00D8FF;
+  animation: shootingStar3 15s linear infinite;
+  z-index: 1;
+}
+
+.shootingStar3::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 60px;
+  height: 1px;
+  background: linear-gradient(90deg, #00D8FF, transparent);
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+@keyframes shootingStar1 {
+  0% {
+    transform: translateX(0) translateY(0) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(calc(85vw)) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+@keyframes shootingStar2 {
+  0% {
+    transform: translateX(0) translateY(0) rotate(0deg);
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  85% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(calc(70vw + 100px)) translateY(-80px) rotate(35deg);
+    opacity: 0;
+  }
+}
+
+@keyframes shootingStar3 {
+  0% {
+    transform: translateX(0) translateY(0) rotate(0deg);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(calc(100vw + 100px)) translateY(-60px) rotate(25deg);
+    opacity: 0;
+  }
+}
