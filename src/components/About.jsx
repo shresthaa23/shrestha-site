@@ -14,7 +14,7 @@ const About = () => {
           <div className={styles.aboutMe}>
             <p>
               I&apos;m a junior <span className={styles.bolded}>Computer Science</span> student at{" "}
-              <span className={styles.bolded}>The University of Maryland, College Park</span> with a minor in Economics. I&apos;m passionate about <span className={styles.bolded}>software development</span> with direct experience in full-stack development, low-level projects, and research. I&apos;ve also become interested in <span className={styles.bolded}>quantum computing</span> and its real-world applications. I&apos;m driven to continously learn, develop impactful solutions and push the boundaries of technology. Check out my{" "}
+              <span className={styles.bolded}>The University of Maryland, College Park</span> with a minor in Economics. I&apos;m passionate about <span className={styles.bolded}>software development</span> with direct experience in full-stack development, security engineering, and research. I&apos;ve also become interested in <span className={styles.bolded}>quantum computing</span> and its real-world applications. I&apos;m driven to continously learn, develop impactful solutions and push the boundaries of technology. Check out my{" "}
               <a
                 className={styles.resume}
                 target="_blank"
@@ -39,7 +39,7 @@ const About = () => {
                 <li>🛰️ Quantum Technologies</li>
                 <li>📐 Linear Algebra</li>
                 <li>➗ Calculus III</li>
-                <li>🎲 Statistics</li>
+                <li>🎲 Advanced Statistics</li>
               </ul>
             </div>
             <br />
