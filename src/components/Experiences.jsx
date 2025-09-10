@@ -1,6 +1,5 @@
 import { experiences } from "../constants";
 import styles from "../styles/experience.module.css";
-import { useState } from "react";
 
 const Experiences = () => {
   // Split experiences into first 3 and last 2
@@ -9,19 +8,19 @@ const Experiences = () => {
 
   return (
     <section id="Experiences" className={styles.container}>
-      <div className={styles.generalHeader}>Experience</div>
+      <div className={styles.generalHeader}>Experiences</div>
       
       {/* First row - first 3 experiences */}
       <div className={`${styles.experienceGrid} ${styles.topRow}`}>
         {firstThree.map((exp, i) => (
-          <ExperienceCard key={i} {...exp} />
+          <FlipCard key={i} {...exp} />
         ))}
       </div>
       
       {/* Second row - last 2 experiences */}
       <div className={`${styles.experienceGrid} ${styles.bottomRow}`}>
         {lastTwo.map((exp, i) => (
-          <ExperienceCard key={i + 3} {...exp} />
+          <FlipCard key={i + 3} {...exp} />
         ))}
       </div>
     </section>
@@ -29,66 +28,47 @@ const Experiences = () => {
 }
 
 // eslint-disable-next-line react/prop-types
-function ExperienceCard({ company, role, date, description, logo, link }) {
-  const [isFlipped, setIsFlipped] = useState(false);
-
-  const handleClick = () => {
-    setIsFlipped(!isFlipped);
-  };
-
+function FlipCard({ logo, company, date, location, role, description, zoom = 1.0 }) {
   return (
-    <div 
-      className={`${styles.flipCard} ${isFlipped ? styles.flipped : ''}`}
-      onClick={handleClick}
-    >
+    <div className={styles.flipCard}>
       <div className={styles.flipCardInner}>
-        {/* Front of the card - Image, Role, Timeline */}
+        {/* Front of the card - 3/5 image, 2/5 content */}
         <div className={styles.flipCardFront}>
-          {link && (
-            <a 
-              href={link} 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className={styles.externalLink}
-              onClick={(e) => e.stopPropagation()}
-            >
-              <svg className={styles.externalLinkIcon} fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
-              </svg>
-            </a>
-          )}
-          <div className={styles.cardHeader}>
+          <div className={styles.frontImageContainer}>
             <img 
               src={logo} 
               alt={`${company} logo`} 
-              className={styles.logo}
-              onError={(e) => {
-                console.error(`Failed to load image: ${logo}`);
-                console.error('Error details:', e);
-              }}
-              onLoad={() => {
-                console.log(`Successfully loaded image: ${logo}`);
-              }}
+              className={styles.frontImage}
+              style={{ transform: `scale(${zoom})` }}
             />
-            <div>
-              <h3 className={styles.role}>{role}</h3>
-            </div>
           </div>
-          <p className={styles.timeline}>{date}</p>
+          <div className={styles.frontContent}>
+            <h3 className={styles.frontTitle}>{role}</h3>
+            <p className={styles.frontSubtitle}>{date}</p>
+          </div>
         </div>
         
-        {/* Back of the card - Full details */}
+        {/* Back of the card - 1/5 shrunken image, 4/5 content */}
         <div className={styles.flipCardBack}>
-          <div>
-            <h3 className={styles.companyName}>{company}</h3>
-            <p className={styles.role}>{role}</p>
+          <div className={styles.backImageContainer}>
+            <img 
+              src={logo} 
+              alt={`${company} logo`} 
+              className={styles.backImage}
+              style={{ transform: `scale(${zoom})` }}
+            />
           </div>
-          <p className={styles.description}>{description}</p>
+          <div className={styles.backContent}>
+            <h3 className={styles.backTitle}>{role}</h3>
+            <p className={styles.backSubtitle}>{company} • {date} • {location}</p>
+            <div className={styles.backDescription}>
+              <p>{description}</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   );
 }
-
 
 export default Experiences;
