@@ -91,8 +91,8 @@ export const technologies = [
     category: "Languages"
   },
   {
-    name: "Qiskit",
-    icon: "qiskit",
+    name: "SQL",
+    icon: "sql",
     category: "Languages"
   },
 
