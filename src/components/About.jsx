@@ -26,15 +26,15 @@ const About = () => {
             </p>
             <br />
             <h3 className={styles.bolded}>Relevant Classes:</h3>
-            <div style={{ display: "flex", gap:"40px" }}>
-              <ul>
+            <div className={styles.classesContainer}>
+              <ul className={styles.classesList}>
                 <li>💻 Advanced Data Structures</li>
                 <li>🧩 Algorithms</li>
                 <li>📦 Object Oriented Programming</li>
                 <li>📊 Data Science</li>
                 <li>🔐 Computer and Network Security</li>
               </ul>
-              <ul>
+              <ul className={styles.classesList}>
                 <li>⚛️ Quantum Computing</li>
                 <li>🛰️ Quantum Technologies</li>
                 <li>📐 Linear Algebra</li>
