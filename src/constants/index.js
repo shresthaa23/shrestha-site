@@ -66,13 +66,8 @@ export const technologies = [
     category: "Languages"
   },
   {
-    name: "C",
-    icon: "c",
-    category: "Languages"
-  },
-  {
-    name: "C#",
-    icon: "csharp",
+    name: "C/C#/C++",
+    icon: "CCC",
     category: "Languages"
   },
   {
@@ -95,7 +90,12 @@ export const technologies = [
     icon: "bash",
     category: "Languages"
   },
-  
+  {
+    name: "Qiskit",
+    icon: "qiskit",
+    category: "Languages"
+  },
+
   {
     name: "React.js",
     icon: "react",
@@ -112,12 +112,10 @@ export const technologies = [
     category: "Frameworks"
   },
   {
-    name: "Qiskit",
-    icon: "qiskit",
+    name: "Flask",
+    icon: "flask",
     category: "Frameworks"
   },
-
-  
   {
     name: "Git",
     icon: "git",
@@ -129,12 +127,12 @@ export const technologies = [
     category: "Dev Tools"
   },
   {
-    name: "Flask",
-    icon: "flask",
+    name: "Docker",
+    icon: "docker",
     category: "Dev Tools"
   },
   {
-    name: "MATLAB",
+    name: "Matlab",
     icon: "matlab",
     category: "Dev Tools"
   },
