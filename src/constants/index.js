@@ -183,7 +183,7 @@ export const experiences = [
     role: "Full Stack Engineer",
     date: "Sep 2024 - May 2025",
     location: "UMD",
-    description: "Assembled data verification tool to optimize the content validation process. Automated Jupyter Notebooks generation, implemented dynamic datapage features and enhanced frontend design improving UI/UX.",   
+    description: "Assembled a data verification tool to optimize content validation process. Automated Jupyter Notebook generation, implemented dynamic data page features and enhanced frontend design improving UI/UX.",   
     descriptiom: "Led website development by coordinating meetings, communicating with stakeholders and delegating tasks; boosting awareness of services for 100s. Created app to simplify 20+ steps, cutting approval pipeline times 50%.",
     logo: "./experiences/theusnews.png",
     zoom: 1.0, 
