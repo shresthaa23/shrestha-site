@@ -27,9 +27,8 @@ const ImageSlider = () => {
                 <div className={styles.slider}>
                     {projects.map((project, index) => (  
                         <div key={index} className={`${styles.slide} ${index === current ? styles.active : ''}`}
-
                           >
-                            {index === current && (
+                            {/* {index === current && ( */}
                             <div className={styles.imageWrapper}>
                                 <img src={`${project.path}`} alt={project.title} className={styles.image}/>
                                 <div className={styles.overlay}>
@@ -45,7 +44,7 @@ const ImageSlider = () => {
                                     {/* title -- description - langugaes - code link ideally */}
                                 </div>
                             </div>          
-                            )}
+                            {/* )} */}
                         </div>
                     ))}
                 </div>
