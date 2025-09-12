@@ -174,7 +174,7 @@ export const experiences = [
     date: "Jan 2025 - Present",
     location: "UMD",
     description: "Building fraud prevention tools to protect older adults from online scams. Prototyping an extension for real-time URL verification and developed a web scraper to analyze 25,000 accounts identifying fraudulent features.",
-    logo: "./experiences/break.png",
+    logo: "./experiences/breakerspace.png",
     link: "https://breakerspace.cs.umd.edu/",
     zoom: 1.5, 
   },
@@ -184,8 +184,8 @@ export const experiences = [
     date: "Sep 2024 - May 2025",
     location: "UMD",
     description: "Assembled a data verification tool to optimize content validation process. Automated Jupyter Notebook generation, implemented dynamic data page features and enhanced frontend design improving UI/UX.",   
-    logo: "./experiences/theusnews.png",
-    zoom: 1.0, 
+    logo: "./experiences/usnews.png",
+    zoom: 2, 
   },
 ];
 
