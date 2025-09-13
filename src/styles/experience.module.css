@@ -1,9 +1,10 @@
 .generalHeader {
+    font-family: 'Orbitron', monospace;
     font-size: 3rem;
-    font-weight: 300;
+    font-weight: 700;
     text-align: center;
-    font-weight: bold;
-    color: #00D8FF;
+    color: #9E7C0C;
+    text-shadow: 0 0 20px rgba(158, 124, 12, 0.5);
 }
 
 .container {
@@ -24,16 +25,25 @@
     gap: 2rem;
     margin-bottom: 2rem;
     width: 100%;
+    opacity: 0;
+    transition: opacity .2s ease, transform 1.5s ease;
 }
 
 .topRow {
     grid-template-columns: repeat(3, 1fr);
+    transform: translateX(-500px);
 }
 
 .bottomRow {
     grid-template-columns: repeat(2, 1fr);
     max-width: 800px;
     margin: 0 auto;
+    transform: translateX(500px);
+}
+
+.experienceGrid.visible {
+    opacity: 1;
+    transform: translateX(0);
 }
 
 /* Flip Card Styles */
