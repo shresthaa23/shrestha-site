@@ -16,12 +16,20 @@
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --color-bg-main: #2B2B2B;
+  --color-special: #5E4B2C;
+  --color-secondary: #8A9A5B;
+  --color-text: #D6D1C1;
+  --color-accent: #9E7C0C;
+  --color-accent2: #c60c30;
+  --color-title: #fff;
+
   line-height: 1.5;
   font-weight: 400;
 
   color: #E0E0E0;
-  /* background-color: #121212; */
-  background: linear-gradient(135deg, #121212, #b35644 );
+  background-color: #2B2B2B;
+  background: linear-gradient(135deg, #2B2B2B, #2B2B2B);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
