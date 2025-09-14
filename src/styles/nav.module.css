@@ -14,7 +14,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: stretch;
-    color: #00D8FF; 
     gap: 2rem;
     padding: 1rem;
     margin: 3rem;
@@ -26,8 +25,10 @@ body {
     font-size: 2rem;
     font-weight: 700;
     gap: 1rem;
-    color: var(--color-accent);
-    text-shadow: 0 0 15px rgba(158, 124, 12, 0.5);
+    /* color: var(--color-accent);
+    text-shadow: 0 0 15px rgba(158, 124, 12, 0.5); */
+    color: red;
+    text-shadow: 0 0 30px var(--color-shadow);
 }
 
 .nav ul {

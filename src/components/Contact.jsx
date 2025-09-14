@@ -1,5 +1,5 @@
 import styles from '../styles/contact.module.css';
-import { Linkedin, Github, Facebook } from './icons';
+import { Linkedin, Github, Facebook } from '../constants/icons';
 
 const Contact = () => {
   return (
@@ -8,7 +8,7 @@ const Contact = () => {
 
       <div className={styles.socialGroup}>
         <h2 className={styles.contactSub}>Email</h2>
-        <div id="email-container"><a href="mailto:ashrest6@terpmail.umd.edu.com">ashrest6@terpmail.umd.edu</a></div>
+        <div className={styles.myemail}><a href="mailto:ashrest6@terpmail.umd.edu.com">ashrest6@terpmail.umd.edu</a></div>
       </div>
 
       <div className={styles.socialGroup}>

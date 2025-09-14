@@ -96,8 +96,8 @@ form button:hover {
 
 .header {
   font-family: var(--font-heading);
-  /* color: #00D8FF; */
-  color: #FFDD00;
+  color: var(--color-accent);
+  text-shadow: 0 0 30px var(--color-shadow);
   font-size: 5rem;
   font-weight: 700;
   margin: 0px;
@@ -108,18 +108,29 @@ form button:hover {
 .socialGroup {
   font-family: var(--font-body);
   margin: auto auto;
-  color: #F5E1C8;
   font-size: 2rem;
   font-weight: 300;
   text-align: center;
+  color: var(--color-text);
+  text-shadow: 0 0 30px var(--color-shadow);
 }
 
 .contactSub {
     font-family: var(--font-body);
     font-size: 3.5rem;
-    font-weight: bold;
     margin-bottom: 10px;
     margin-top: 0px;
+}
+
+.myemail {
+  color: var(--color-text);
+  text-shadow: 0 0 0px var(--color-shadow);
+  transition: color 0.3s ease;
+}
+
+.myemail:hover {
+  color: var(--color-accent);
+  text-shadow: 0 0 30px var(--color-shadow);
 }
 
 .icons {
@@ -129,33 +140,16 @@ form button:hover {
   align-items: center;
 
   a:hover {
-    color: blue;
-    filter: brightness(200%);
-
+    color: var(--color-accent);
+    text-shadow: 0 0 30px var(--color-shadow);
   }
 
   svg {
     margin: 0px 10px;
     cursor: pointer;
+    transition: color 0.3s ease;
   }
 }
-
-
-/* .icons {
-  display: flex;
-  flex-direction: row;
-  margin-top: 20px;
-  align-items: center;
-}
-
-a:hover {
-    filter: brightness(130%);
-}
-
-svg {
-    margin: 0px 10px;
-    cursor: pointer;
-} */
 
 @media screen and (max-height: 600px) {
   .socialGroup {

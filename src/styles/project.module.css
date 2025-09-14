@@ -51,9 +51,9 @@
     top: 50%;
     transform: translateY(-50%); 
     font-size: 2rem;
-    color: "#F5E1C8";
     cursor: pointer;
     z-index: 2; 
+    color: var(--color-text);
 }
 
 .leftArrow {
@@ -65,15 +65,15 @@
 }
 
 .leftArrow:hover, .rightArrow:hover {
-    color: #FFDD00;
+    color: var(--color-accent)
 } 
 
 .generalHeader {
     font-size: 3rem;
-    font-weight: 300;
+    font-weight: 700;
     text-align: center;
-    font-weight: bold;
-    color: #00D8FF;
+    color: var(--color-accent);
+    text-shadow: 0 0 30px var(--color-shadow);
 }
 
 .container {
