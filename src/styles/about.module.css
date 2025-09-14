@@ -1,46 +1,52 @@
 .aboutSubheader {
     font-size: 3rem;
     font-weight: 300;
-    color: #E0E0E0;
+    color: white;
     width: 45vw;
     text-align: center;
     margin-top: 20px;
 }
 
 .generalHeader {
+    font-family: var(--font-heading);
     font-size: 3rem;
-    font-weight: 300;
+    font-weight: 700;
     text-align: center;
-    font-weight: bold;
-    color: #00D8FF;
+    color: var(--color-accent);
+    text-shadow: 0 0 30px var(--color-shadow);
 }
 
 .myName {
     font-size: 2rem; 
     font-weight: 700; 
-    color: #FFDD00;
     margin-bottom: 10px;
-    border-bottom: 2px solid #FFDD00; 
+    border-bottom: 2px solid var(--color-accent); 
     padding-bottom: 5px;
     display: inline-block;
+    font-family: var(--font-body);
+    color: var(--color-text);
+    text-shadow: 0 0 30px var(--color-shadow);
 }
 
 .aboutMe {
     font-size: 1rem; 
     line-height: 1.5; 
-    color: "#F5E1C8";
     width: 100%; 
     text-align: left;
     margin-top: 0; 
+    color: var(--color-text);
 }
 
 .resume {
     text-decoration: none;
-    color: #FFDD00 ;
+    transition: color 0.3s ease;
+    font-weight: 700;
+    color: var(--color-text);
+    text-shadow: 0 0 10px rgba(158, 124, 12, 0.3);
 }
 
 .resume:hover {
-    text-decoration: underline;
+    color: var(--color-accent);
 }
 
 .container {
@@ -56,34 +62,13 @@
     min-height: 100vh; 
 }
 
-.marquee {
-    width: 100%;
-    overflow: hidden; 
-    display: flex; 
-    justify-content: flex-start; 
-}
-  
-.marquee-item {
-    display: inline-block; 
-    padding: 10px; 
-    text-align: center;
-    margin-right: 20px;
-}
-  
-.marquee-img {
-    width: 75px; 
-    height: 75px;
-    border-radius: 8px;
-}
-
 .imageCaption {
     margin-top: 8px; 
     font-size: 14px; 
     font-weight: bold;
-    color: #333; 
+    color: white; 
     text-transform: capitalize; 
     text-align: center;
-    color: #F5E1C8;
 }
   
 .aboutBox {
@@ -102,14 +87,28 @@
     border-radius: 15px; 
     flex-wrap: wrap;
 
-    border: 3px solid #F5E1C8; 
-    box-shadow: 5px 5px 15px rgba(245, 225, 202, 0.3); 
+    border: 3px solid #9E7C0C; 
+    box-shadow: 0 0 30px rgba(158, 124, 12, 0.3), 5px 5px 15px rgba(0, 0, 0, 0.3); 
     overflow-y: auto;
     overflow-x: hidden;
+    background: rgba(36, 23, 115, 0.1);
+    backdrop-filter: blur(10px);
+    opacity: 0;
+    transform: scale(0.95);
+    transition: opacity 1.2s ease, transform 1.2s ease;
+    font-family: var(--font-body);
+}
+
+.aboutBox.visible {
+    opacity: 1;
+    transform: scale(1);
 }
 
 .bolded {
-    color: #FFDD00;
+    font-weight: 700;
+    font-family: var(--font-body);
+    color: var(--color-text);
+    text-shadow: 0 0 30px var(--color-shadow);
 }
 
 .classesContainer {
@@ -136,7 +135,16 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: flex-start; 
+    justify-content: flex-start;
+    opacity: 0;
+    transform: scale(0.95);
+    transition: opacity 2s ease, transform 2s ease;
+    transition-delay: 0.2s;
+}
+
+.text.visible {
+    opacity: 1;
+    transform: scale(1);
 }
 
 .aboutMe {
@@ -158,6 +166,15 @@
     height: 475px;
     overflow: hidden;
     flex-shrink: 0;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 1.5s ease, transform 1.5s ease;
+    transition-delay: 0.7s;
+}
+
+.photo.visible {
+    opacity: 1;
+    transform: scale(1);
 }
 
 .profilePhoto {
@@ -318,6 +335,110 @@
     .photo {
         width: 150px;
         height: 180px;
+    }
+}
+
+/* Door Transition Styles */
+.doorContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    z-index: 20;
+    pointer-events: none;
+}
+
+.doorLeft, .doorRight {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 100%;
+    background-image: url('/backgrounds/door.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 21;
+    transition: transform 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.doorLeft {
+    transform: translate(-50%, -50%);
+    background-position: left center;
+}
+
+.doorRight {
+    transform: translate(-50%, -50%);
+    background-position: right center;
+}
+
+.doorLeft.open {
+    transform: translate(-150%, -50%);
+}
+
+.doorRight.open {
+    transform: translate(50%, -50%);
+}
+
+.doorOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--color-accent);
+    z-index: 20;
+    opacity: 1;
+    transition: opacity 1.5s ease;
+}
+
+.doorOverlay.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Hide doors on smaller screens */
+@media screen and (max-width: 1200px) {
+    .doorContainer {
+        display: none;
+    }
+    
+    .doorLeft, .doorRight, .doorOverlay {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 968px) {
+    .doorContainer {
+        display: none !important;
+        opacity: 0 !important;
+        visibility: hidden !important;
+    }
+    
+    .doorLeft, .doorRight, .doorOverlay {
+        display: none !important;
+        opacity: 0 !important;
+        visibility: hidden !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .doorContainer {
+        display: none !important;
+        opacity: 0 !important;
+        visibility: hidden !important;
+    }
+    
+    .doorLeft, .doorRight, .doorOverlay {
+        display: none !important;
+        opacity: 0 !important;
+        visibility: hidden !important;
     }
 }
 

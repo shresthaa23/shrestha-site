@@ -1,9 +1,10 @@
 .generalHeader {
+    font-family: var(--font-heading);
     font-size: 3rem;
-    font-weight: 300;
+    font-weight: 700;
     text-align: center;
-    font-weight: bold;
-    color: #00D8FF;
+    color: var(--color-accent);
+    text-shadow: 0 0 20px rgba(158, 124, 12, 0.5);
 }
 
 .container {
@@ -24,16 +25,25 @@
     gap: 2rem;
     margin-bottom: 2rem;
     width: 100%;
+    opacity: 0;
+    transition: opacity .2s ease, transform 1.5s ease;
 }
 
 .topRow {
     grid-template-columns: repeat(3, 1fr);
+    transform: translateX(-500px);
 }
 
 .bottomRow {
     grid-template-columns: repeat(2, 1fr);
     max-width: 800px;
     margin: 0 auto;
+    transform: translateX(500px);
+}
+
+.experienceGrid.visible {
+    opacity: 1;
+    transform: translateX(0);
 }
 
 /* Flip Card Styles */
@@ -117,6 +127,7 @@
 }
 
 .frontTitle {
+  font-family: var(--font-heading);
   font-size: 1.5rem;
   font-weight: 600;
   margin: 0 0 0.5rem 0;
@@ -124,6 +135,7 @@
 }
 
 .frontSubtitle {
+  font-family: var(--font-body);
   font-size: 1.3rem;
   opacity: 0.8;
   margin: 0;
@@ -160,9 +172,11 @@
   padding-left: 12px;
   padding-right: 12px;
   padding-top: 12px;
+  font-family: var(--font-body);
 }
 
 .backTitle {
+  font-family: var(--font-heading);
   font-size: 1.2rem;
   font-weight: 600;
   margin: 0 0 0.5rem 0;
@@ -170,6 +184,7 @@
 }
 
 .backSubtitle {
+  font-family: var(--font-body);
   font-size: 1rem;
   font-weight: 500;
   margin: 0 0 1rem 0;
@@ -183,6 +198,7 @@
 }
 
 .backDescription p {
+  font-family: var(--font-body);
   font-size: 0.9rem;
   line-height: 1.5;
   margin: 0;

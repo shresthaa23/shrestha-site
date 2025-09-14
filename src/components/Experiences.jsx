@@ -1,24 +1,62 @@
+import { useState, useEffect, useRef } from "react";
 import { experiences } from "../constants";
 import styles from "../styles/experience.module.css";
 
 const Experiences = () => {
+  const [topRowVisible, setTopRowVisible] = useState(false);
+  const [bottomRowVisible, setBottomRowVisible] = useState(false);
+  const sectionRef = useRef(null);
+
   // Split experiences into first 3 and last 2
   const firstThree = experiences.slice(0, 3);
   const lastTwo = experiences.slice(3, 5);
 
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setTimeout(() => {
+              setTopRowVisible(true);
+            }, 300);
+            
+            setTimeout(() => {
+              setBottomRowVisible(true);
+            }, 300);
+          }
+        });
+      },
+      {
+        threshold: 0.2, // Trigger when 20% of the section is visible
+        rootMargin: "0px 0px -50px 0px"
+      }
+    );
+
+    const currentRef = sectionRef.current;
+    if (currentRef) {
+      observer.observe(currentRef);
+    }
+
+    return () => {
+      if (currentRef) {
+        observer.unobserve(currentRef);
+      }
+    };
+  }, []);
+
   return (
-    <section id="Experiences" className={styles.container}>
+    <section id="Experiences" className={styles.container} ref={sectionRef}>
       <div className={styles.generalHeader}>Experiences</div>
       
       {/* First row - first 3 experiences */}
-      <div className={`${styles.experienceGrid} ${styles.topRow}`}>
+      <div className={`${styles.experienceGrid} ${styles.topRow} ${topRowVisible ? styles.visible : ''}`}>
         {firstThree.map((exp, i) => (
           <FlipCard key={i} {...exp} />
         ))}
       </div>
       
       {/* Second row - last 2 experiences */}
-      <div className={`${styles.experienceGrid} ${styles.bottomRow}`}>
+      <div className={`${styles.experienceGrid} ${styles.bottomRow} ${bottomRowVisible ? styles.visible : ''}`}>
         {lastTwo.map((exp, i) => (
           <FlipCard key={i + 3} {...exp} />
         ))}

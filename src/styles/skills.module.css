@@ -1,9 +1,10 @@
 .generalHeader {
+    font-family: var(--font-heading);
     font-size: 3rem;
-    font-weight: 300;
+    font-weight: 700;
     text-align: center;
-    font-weight: bold;
-    color: #00D8FF;
+    color: var(--color-accent);
+    text-shadow: 0 0 20px rgba(158, 124, 12, 0.5);
 }
 
 .container {
@@ -29,14 +30,14 @@
     gap: 4rem;
     width: 100%;
     margin-top: 3rem;
-    max-width: 1200px;
+    max-width: 1300px;
 }
 
 .categorySection {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    gap: 0rem;
 }
 
 .languagesSection {
@@ -57,14 +58,17 @@
 }
 
 .categoryTitle {
+    font-family: var(--font-heading);
     font-size: 1.5rem;
     font-weight: 600;
-    color: #F5E1C8;
+    color: var(--color-text);
+    text-shadow: 0 0 30px var(--color-shadow);
+    border-bottom: 2px solid var(--color-accent);
+
     margin: 0;
     text-align: center;
-    border-bottom: 2px solid #00D8FF;
-    padding-bottom: 0.5rem;
     width: fit-content;
+    text-shadow: 0 0 10px rgba(158, 124, 12, 0.3);
 }
 
 .technologiesContainer {
@@ -72,7 +76,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1.5rem; 
+    gap: 1.5rem;
     max-width: 500px;
 }
 
@@ -81,7 +85,7 @@
 }
   
 .technologyItem {
-    height: 6rem; 
+    height: 6.7rem; 
     width: 6rem;  
 }
 
@@ -101,12 +105,15 @@
     }
     
     .technologiesContainer {
-        gap: 1.5rem;
+        gap: 2rem;
         max-width: 600px;
+        padding-bottom: 1rem;
     }
     
     .languagesSection .technologiesContainer {
         max-width: 600px;
+        gap: 2.5rem;
+        padding-bottom: 1.5rem;
     }
 }
 
@@ -125,8 +132,14 @@
     }
     
     .technologiesContainer {
-        gap: 1rem;
+        gap: 1.5rem;
         max-width: 400px;
+        padding-bottom: 1rem;
+    }
+    
+    .languagesSection .technologiesContainer {
+        gap: 2rem;
+        padding-bottom: 1.5rem;
     }
     
     .technologyItem {
