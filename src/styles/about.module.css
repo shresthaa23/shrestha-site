@@ -403,3 +403,42 @@
     pointer-events: none;
 }
 
+/* Hide doors on smaller screens */
+@media screen and (max-width: 1200px) {
+    .doorContainer {
+        display: none;
+    }
+    
+    .doorLeft, .doorRight, .doorOverlay {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 968px) {
+    .doorContainer {
+        display: none !important;
+        opacity: 0 !important;
+        visibility: hidden !important;
+    }
+    
+    .doorLeft, .doorRight, .doorOverlay {
+        display: none !important;
+        opacity: 0 !important;
+        visibility: hidden !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .doorContainer {
+        display: none !important;
+        opacity: 0 !important;
+        visibility: hidden !important;
+    }
+    
+    .doorLeft, .doorRight, .doorOverlay {
+        display: none !important;
+        opacity: 0 !important;
+        visibility: hidden !important;
+    }
+}
+
