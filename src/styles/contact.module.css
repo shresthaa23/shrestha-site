@@ -88,12 +88,14 @@ form button:hover {
 } */
 
 .contact {
+  font-family: var(--font-body);
   padding-top: 120px;
   padding-bottom: 10vh;
   flex-direction: column;
 }
 
 .header {
+  font-family: var(--font-heading);
   /* color: #00D8FF; */
   color: #FFDD00;
   font-size: 5rem;
@@ -104,6 +106,7 @@ form button:hover {
 }
 
 .socialGroup {
+  font-family: var(--font-body);
   margin: auto auto;
   color: #F5E1C8;
   font-size: 2rem;
@@ -112,6 +115,7 @@ form button:hover {
 }
 
 .contactSub {
+    font-family: var(--font-body);
     font-size: 3.5rem;
     font-weight: bold;
     margin-bottom: 10px;

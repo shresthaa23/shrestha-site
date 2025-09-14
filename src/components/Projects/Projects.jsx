@@ -4,7 +4,7 @@ import ImageSlider from "./ImageSlider";
 const Projects = () => {
   return (
     <section id="Projects" className={styles.container}>
-      <div className={styles.generalHeader}>Projects</div>
+      <h1 className={styles.generalHeader}>Projects</h1>
       <ImageSlider />
     </section>
   );

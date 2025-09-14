@@ -173,7 +173,7 @@ export const experiences = [
     role: "Cybersecurity Research Assistant",
     date: "Jan 2025 - Present",
     location: "UMD",
-    description: "Building fraud prevention tools to protect older adults from online scams. Prototyping an extension for real-time URL verification and developed a web scraper to analyze 25,000 accounts identifying fraudulent features.",
+    description: "Building fraud prevention tools to protect older adults from online scams. Prototyping an extension for real-time URL verification and developed a web scraper to analyze 25,000 accounts identifying suspicious features.",
     logo: "./experiences/breakerspace.png",
     link: "https://breakerspace.cs.umd.edu/",
     zoom: 1.5, 

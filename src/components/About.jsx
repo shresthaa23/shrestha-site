@@ -45,7 +45,7 @@ const About = () => {
 
   return (
     <section id="About" className={styles.container} ref={sectionRef}>
-      <div className={styles.generalHeader}>About Me</div>
+      <h1 className={styles.generalHeader}>About Me</h1>
       
       <div className={`${styles.aboutBox} ${aboutVisible ? styles.visible : ''}`}>
         {/* Door Transition - positioned over the about box */}

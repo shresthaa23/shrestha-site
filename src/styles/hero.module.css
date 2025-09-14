@@ -13,18 +13,22 @@
   text-align: center;
   margin-top: 20px;
 } */
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Oxanium:wght@200..800&display=swap');
 
 .heroHeader {
-  color: #00D8FF;
+  font-family: var(--font-heading);
+  color: var(--color-accent);
   font-size: 6rem;
-  font-weight: 700;
+  font-weight: 900;
   text-align: center;
+  text-shadow: 0 0 30px rgba(158, 124, 12, 0.6);
 }
 
 .heroSubheader {
+  font-family: var(--font-body);
   font-size: 2.2rem;
   font-weight: 300;
-  color: #E0E0E0;
+  color: var(--color-text);
   width: 45vw;
   text-align: center;
   margin-top: 20px;

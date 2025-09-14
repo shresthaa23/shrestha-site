@@ -19,12 +19,15 @@ body {
     padding: 1rem;
     margin: 3rem;
     margin-top: -3rem;
-    /* can do box shadow? */ 
 }
 
 .navTitle {
+    font-family: var(--font-heading);
     font-size: 2rem;
+    font-weight: 700;
     gap: 1rem;
+    color: var(--color-accent);
+    text-shadow: 0 0 15px rgba(158, 124, 12, 0.5);
 }
 
 .nav ul {
@@ -38,18 +41,21 @@ body {
 
 .nav a {
     font-weight: 500;
-    color: inherit;
+    color: var(--color-text);
     text-decoration: none;
     height: 100%;
     display: flex;
     align-items: center;
     padding: .25rem;
+    transition: color 0.3s ease;
+    font-family: var(--font-heading);
 }
 
 .nav li.active {
     background-color: yellow;
 }
 
-.nav li:hover {
-    text-decoration: underline;
+.nav a:hover {
+    color: var(--color-accent);
+    text-shadow: 0 0 10px rgba(158, 124, 12, 0.5);
 }

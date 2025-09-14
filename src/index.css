@@ -12,10 +12,13 @@
 */
 
 @import "tailwindcss";
-
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Oxanium:wght@200..800&display=swap');
 
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --font-heading: 'Anta', sans-serif;
+  --font-body: "Oxanium", sans-serif;
+  /* font-weight: 400;
+  font-style: normal; */
   --color-bg-main: #2B2B2B;
   --color-special: #5E4B2C;
   --color-secondary: #8A9A5B;
@@ -35,4 +38,14 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+body, a {
+  font-family: var(--font-body); 
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading); 
 }
