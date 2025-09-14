@@ -1,5 +1,5 @@
 import styles from '../styles/contact.module.css';
-import { Linkedin, Github, Facebook } from '../constants/icons';
+import { Linkedin, Github, Facebook } from "../constants/icons";
 
 const Contact = () => {
   return (
